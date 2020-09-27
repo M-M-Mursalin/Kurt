@@ -125,12 +125,10 @@ html{
     font-weight: 600;
     font-size: 25px;
 }
-.service-icon{
-    Width: 50px:
-} 
 .service-icon span{
     font-size: 30px;
-    margin-right: 20px;
+    Width: 60px;
+    display: inline-block;
 }
 .service-text p{
     color: #9999;
