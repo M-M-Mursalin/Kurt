@@ -1,0 +1,275 @@
+/* Default css  */
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* customized css  */
+.bg-color{
+    background: #1e1e1e;
+}
+/* responsive bar  */
+.navbar-toggler-icon i{
+    color: #fff;
+    font-size: 20px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+/* header-section start  */
+.header-section{
+    background: url(images/1.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar-brand {
+    width: 110px;
+}
+.navbar-nav li a{
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+}
+.navbar-nav li a::after{
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in-out .4s;
+}
+.navbar-nav li:nth-child(1) a:hover::after{
+    visibility: visible;
+    opacity: 1;
+    width: 65px;
+}
+.navbar-nav li:nth-child(2) a:hover::after{
+    visibility: visible;
+    opacity: 1;
+    width: 67px;
+}
+.navbar-nav li:nth-child(3) a:hover::after{
+    visibility: visible;
+    opacity: 1;
+    width: 82px;
+}
+.slider-text{
+    position: relative;
+    top: 30vh;
+}
+.slider-text p{
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+.slider-text h2{
+    font-size: 60px;
+    font-weight: 800;
+}
+.slider-text a{
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    position: absolute;
+}
+.slider-text a::after{
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.slider-text a:hover::after{
+    opacity: 1;
+    visibility: visible;
+    width: 101px;
+}
+/* about-section start  */
+.about-content h6{
+    letter-spacing: 6px;
+}
+.about-content h2{
+    margin: 30px 0;
+    font-size: 60px;
+    font-weight: 700;
+    width: 70%;
+}
+.about-content p{
+    margin-top: 100px;
+    width: 90%;
+    font-weight: 500;
+    font-size: 25px;
+}
+/* service-setion start  */
+.kurt-text h5{
+    font-weight: 600;
+    font-size: 25px;
+}
+.service-icon span{
+    font-size: 30px;
+    margin-right: 20px;
+}
+.service-text p{
+    color: #9999;
+    font-size: 18px;
+}
+.client-item img{
+    filter: invert(100%);
+   -webkit-filter: invert(100%);
+}
+.client-item{
+    border: 1px solid rgba(122, 122, 122, 0.4);
+    box-sizing: border-box;
+    padding: 10px;
+    margin-right: 10px;
+    height: 100%;
+    transition: .4s;
+}
+.client-item:hover{
+    border: 1px solid #aaa;
+}
+.work  a{
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.work  a::after{
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 145px;
+    height: 2px;
+    background: #fff;
+    transition: .4s;
+}
+.work  a:hover::after{
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+}
+/* contact-section start  */
+.phone-number a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.phone-number a::after{
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 0;
+    height: 2px;
+    width: 115px;
+    background: #fff;
+    transition: .4s;
+}
+.phone-number a:hover::after{
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.email-number a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.email-number a::after{
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 0;
+    height: 2px;
+    width: 137px;
+    background: #fff;
+    transition: .4s;
+}
+.email-number a:hover::after{
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.location-address p{
+    color: #999;
+}
+/* contact-form start  */
+.form-control{
+    padding: 15px 10px;
+}
+.contact-btn a{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgba(122, 122, 122, 0.4);
+    color: #fff;
+    font-weight: 600;
+    transition: .4s;
+}
+.contact-btn a:hover{
+    background: #fff;
+    color: #1e1e1e;
+}
+.form-control{
+    background: transparent;
+    border: transparent;
+    border-bottom: 1px solid rgba(122, 122, 122, 0.4);
+    border-radius: 0;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: transparent;
+    border-color: rgba(122, 122, 122, 0.4);
+    outline: 0;
+    box-shadow: none;
+}
+.text-area{
+    height: 130px;
+}
+.footer-button{
+    display: flex;
+    justify-content: flex-end;
+}
+/* back to top button  */
+#myBtn {
+    margin-top: -17px;
+    display: none; /* Hidden by default */
+    position: inherit; /* Fixed/sticky position */ 
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: transparent; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: transparent; /* Add a dark-grey background on hover */
+  }
